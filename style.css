@@ -32,7 +32,7 @@ body {
 .logo {
   display: block;
   margin: 0 auto 20px;
-  width: 300px; /* Adjust logo size as needed */
+  max-width: 100%; /* Adjust logo size as needed */
   height: auto;
 }
 
@@ -103,7 +103,6 @@ input:valid + label {
   background-color: #0056b3;
 }
 
-
 /* Style for icons */
 .input-group i {
   position: absolute;
@@ -112,17 +111,38 @@ input:valid + label {
   transform: translateY(-50%);
   color: #000000;
 }
+
 .success-message {
   display: none;
   color: green;
   font-weight: bold;
 }
+
 .hide-show-text {
   cursor: pointer;
   font-size: 14px;
   color: #000000;
   position: absolute;
   top: 50%;
-  margin-left: 265px; /* Adjust margin as needed */
-  margin-top: -8px; /* Adjust to vertically center text with the input */
+  margin-left: calc(100% - 40px); /* Adjust margin as needed */
+  transform: translateY(-50%);
+}
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+  
+  .logo {
+    width: 70%;
+    height: auto;
+  }
+  
+  .input-group i {
+    left: -15px;
+  }
+  
+  .hide-show-text {
+    margin-left: calc(100% - 50px);
+  }
 }
