@@ -117,3 +117,12 @@ input:valid + label {
   color: green;
   font-weight: bold;
 }
+.hide-show-text {
+  cursor: pointer;
+  font-size: 14px;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  margin-left: 265px; /* Adjust margin as needed */
+  margin-top: -8px; /* Adjust to vertically center text with the input */
+}
