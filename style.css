@@ -1,4 +1,4 @@
-/* Reset default margin and padding */
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ body {
 .logo {
   display: block;
   margin: 0 auto 20px;
-  max-width: 100%; /* Adjust logo size as needed */
+  max-width: 100%;
   height: auto;
 }
 
@@ -103,7 +103,6 @@ input:valid + label {
   background-color: #0056b3;
 }
 
-/* Style for icons */
 .input-group i {
   position: absolute;
   left: -10px;
@@ -124,10 +123,10 @@ input:valid + label {
   color: #000000;
   position: absolute;
   top: 50%;
-  margin-left: calc(100% - 40px); /* Adjust margin as needed */
+  margin-left: 270px;
   transform: translateY(-50%);
 }
-/* Media Queries for responsiveness */
+
 @media (max-width: 768px) {
   .container {
     max-width: 80%;
