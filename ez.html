@@ -17,8 +17,8 @@
     <form id="calculatorForm">
         <label for="fname">Enter first number:</label>
         <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Enter Second number:</label>
-        <input type="text" id="lname" name="lname"><br><br>
+        <label for="snum">Enter second number:</label>
+        <input type="text" id="snum" name="snum"><br><br>
         <input type="submit" value="Submit">
     </form>
 
@@ -26,15 +26,16 @@
 
     <script>
         document.getElementById("calculatorForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault(); 
 
             var firstNumber = parseFloat(document.getElementById("fname").value);
-            var secondNumber = parseFloat(document.getElementById("lname").value);
+            var secondNumber = parseFloat(document.getElementById("snum").value);
 
             var sum = firstNumber + secondNumber;
             var difference = firstNumber - secondNumber;
             var product = firstNumber * secondNumber;
-        
+            var quotient = firstNumber / secondNumber;
+
             var resultText = "Sum: " + sum + "<br>";
             resultText += "Difference: " + difference + "<br>";
             resultText += "Product: " + product + "<br>";
